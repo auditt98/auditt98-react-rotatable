@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pjarmalavicius/react-rotatable.git"
+    "url": "https://github.com/auditt98/auditt98-react-rotatable.git"
   },
   "keywords": [
     "react-rotatable",
@@ -29,9 +29,9 @@
   "author": "auditt98",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pjarmalavicius/react-rotatable/issues"
+    "url": "https://github.com/auditt98/auditt98-react-rotatable/issues"
   },
-  "homepage": "https://pjarmalavicius.github.io/react-rotatable/",
+  "homepage": "https://github.com/auditt98/auditt98-react-rotatable",
   "devDependencies": {
     "babel-cli": "^6.1.18",
     "babel-core": "^6.0.0",
