@@ -10,7 +10,7 @@ class App extends Component {
     this.handleRotate = this.handleRotate.bind(this);
     this.handleRotateStop = this.handleRotateStop.bind(this);
 
-    this.state = { angle: 0, text: 'Rotate me' };
+    this.state = { angle: 70, text: 'Rotate me' };
   }
 
   handleRotateStart(e, element, angle) {
@@ -40,6 +40,7 @@ class App extends Component {
     return (
       <div>
         <Rotatable
+          angle={this.state.angle}
           onRotate={this.handleRotate}
           onRotateStart={this.handleRotateStart}
           onRotateStop={this.handleRotateStop}

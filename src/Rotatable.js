@@ -11,11 +11,12 @@ class Rotatable extends Component {
     this.handleRotate = this.handleRotate.bind(this);
     this.handleStopRotate = this.handleStopRotate.bind(this);
 
-    this.state = { rotating: false, angle: 0 };
+    this.state = { rotating: false, angle: this.props.angle || 0 };
   }
 
   componentDidMount() {
     this.addHandle();
+    this.initRotation();
   }
 
   componentDidUpdate() {
@@ -71,6 +72,12 @@ class Rotatable extends Component {
     }
 
     this.setState({ rotating: true });
+  }
+
+  initRotation = () => {
+    const angleDeg = this.state.angle;
+    const matrixArray = getTransformMatrix(this.rotatable);
+    this.rotatable.style.transform = `translate(${matrixArray[4]}px, ${matrixArray[5]}px) rotate(${angleDeg}deg)`;
   }
 
   handleRotate(e) {
